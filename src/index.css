@@ -1,3 +1,23 @@
-.bannerText{
+.bannerText {
   color: aqua;
+}
+/* .code {
+  color: blue;
+} */
+
+/* Table Styling */
+.student table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.student td,
+.student th {
+  text-align: left;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.student table th {
+  width: 100px;
 }
