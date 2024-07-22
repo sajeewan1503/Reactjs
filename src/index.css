@@ -1,23 +1,122 @@
-.bannerText {
+/* .bannerText {
   color: aqua;
-}
+} */
 /* .code {
   color: blue;
 } */
 
 /* Table Styling */
-.student table {
+/* .student table {
   border: 1px solid #ccc;
   border-collapse: collapse;
   width: 300px;
   margin-bottom: 10px;
-}
-.student td,
+} */
+/* .student td,
 .student th {
   text-align: left;
   border: 1px solid black;
   padding: 5px 10px;
-}
-.student table th {
+} */
+/* .student table th {
   width: 100px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  margin: 0;
+}
+h3 {
+  margin: 10px 0;
+}
+h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+p {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.card-container {
+  background-color: aqua;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px black;
+  color: black;
+  padding-top: 30px;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+.pro {
+  color: black;
+  /* background-color: red; */
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 290px;
+  left: 270px;
+}
+.online {
+  background-color: greenyellow;
+}
+.offline {
+  background-color: red;
+}
+.img {
+  width: 100px;
+  height: 110px;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 4px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+button.primary {
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  padding: 8px 15px;
+}
+button.primary.outline {
+  background-color: transparent;
+}
+.skills {
+  background-color: aquamarine;
+  text-align: left;
+  padding: 15px;
+  margin-top: 15px;
+}
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.skills ul li {
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 7px;
+  margin: 0 7px 7px 0;
+  font-size: 12px;
 }
