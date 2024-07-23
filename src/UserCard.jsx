@@ -31,9 +31,9 @@ const userData = [
 function User(props) {
   return (
     <div className="card-container">
-      <span className={props.online ? "pro online" : "pro offline"}>
+      {/* <span className={props.online ? "pro online" : "pro offline"}>
         {props.online ? "ONLINE" : "OFFLINE"}
-      </span>
+      </span> */}
       <img src={props.profile} className="img" alt="user" />
       {/* <img src="public/images/image1.jpg" className="img" alt="user" /> */}
       <h3>{props.name}</h3>
