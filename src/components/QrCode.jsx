@@ -20,7 +20,7 @@ export const QrCode = () => {
     }
     // setImg("./public/images/image3.png");
   }
-  function downloadQR(name) {
+  function downloadQR() {
     fetch(img)
       .then((response) => response.blob())
       .then((blob) => {
@@ -30,6 +30,9 @@ export const QrCode = () => {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+      })
+      .catch((error) => {
+        console.error("Error Downloading QR Code", error);
       });
   }
   return (
@@ -61,7 +64,7 @@ export const QrCode = () => {
         <button
           className="generate-button"
           disabled={loading}
-          onClick={generatQR}
+          onClick={generateQR}
         >
           Generate QR Code
         </button>
